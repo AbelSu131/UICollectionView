@@ -13,6 +13,8 @@
 		B52A81B61BC18A71001F6A7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B52A81B41BC18A71001F6A7D /* Main.storyboard */; };
 		B52A81B81BC18A71001F6A7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B52A81B71BC18A71001F6A7D /* Assets.xcassets */; };
 		B52A81BB1BC18A71001F6A7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B52A81B91BC18A71001F6A7D /* LaunchScreen.storyboard */; };
+		B52A81CA1BC19461001F6A7D /* cat.png in Resources */ = {isa = PBXBuildFile; fileRef = B52A81C91BC19461001F6A7D /* cat.png */; settings = {ASSET_TAGS = (); }; };
+		B591C1901BC2BB0E00F44FB3 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B591C18F1BC2BB0E00F44FB3 /* CollectionViewCell.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,9 @@
 		B52A81B71BC18A71001F6A7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B52A81BA1BC18A71001F6A7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B52A81BC1BC18A71001F6A7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B52A81C91BC19461001F6A7D /* cat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cat.png; sourceTree = "<group>"; };
+		B591C18E1BC2BB0E00F44FB3 /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
+		B591C18F1BC2BB0E00F44FB3 /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,14 +63,7 @@
 		B52A81AA1BC18A71001F6A7D /* UICollectionView */ = {
 			isa = PBXGroup;
 			children = (
-				B52A81AE1BC18A71001F6A7D /* AppDelegate.h */,
-				B52A81AF1BC18A71001F6A7D /* AppDelegate.m */,
-				B52A81B11BC18A71001F6A7D /* ViewController.h */,
-				B52A81B21BC18A71001F6A7D /* ViewController.m */,
-				B52A81B41BC18A71001F6A7D /* Main.storyboard */,
-				B52A81B71BC18A71001F6A7D /* Assets.xcassets */,
-				B52A81B91BC18A71001F6A7D /* LaunchScreen.storyboard */,
-				B52A81BC1BC18A71001F6A7D /* Info.plist */,
+				B52A81C51BC190CF001F6A7D /* UICollection */,
 				B52A81AB1BC18A71001F6A7D /* Supporting Files */,
 			);
 			path = UICollectionView;
@@ -74,9 +72,27 @@
 		B52A81AB1BC18A71001F6A7D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B52A81AE1BC18A71001F6A7D /* AppDelegate.h */,
+				B52A81AF1BC18A71001F6A7D /* AppDelegate.m */,
+				B52A81B11BC18A71001F6A7D /* ViewController.h */,
+				B52A81B21BC18A71001F6A7D /* ViewController.m */,
+				B52A81B41BC18A71001F6A7D /* Main.storyboard */,
+				B52A81C91BC19461001F6A7D /* cat.png */,
+				B52A81B71BC18A71001F6A7D /* Assets.xcassets */,
+				B52A81B91BC18A71001F6A7D /* LaunchScreen.storyboard */,
+				B52A81BC1BC18A71001F6A7D /* Info.plist */,
 				B52A81AC1BC18A71001F6A7D /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B52A81C51BC190CF001F6A7D /* UICollection */ = {
+			isa = PBXGroup;
+			children = (
+				B591C18E1BC2BB0E00F44FB3 /* CollectionViewCell.h */,
+				B591C18F1BC2BB0E00F44FB3 /* CollectionViewCell.m */,
+			);
+			name = UICollection;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +155,7 @@
 			files = (
 				B52A81BB1BC18A71001F6A7D /* LaunchScreen.storyboard in Resources */,
 				B52A81B81BC18A71001F6A7D /* Assets.xcassets in Resources */,
+				B52A81CA1BC19461001F6A7D /* cat.png in Resources */,
 				B52A81B61BC18A71001F6A7D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -152,6 +169,7 @@
 			files = (
 				B52A81B31BC18A71001F6A7D /* ViewController.m in Sources */,
 				B52A81B01BC18A71001F6A7D /* AppDelegate.m in Sources */,
+				B591C1901BC2BB0E00F44FB3 /* CollectionViewCell.m in Sources */,
 				B52A81AD1BC18A71001F6A7D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,6 +317,7 @@
 				B52A81C11BC18A71001F6A7D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
